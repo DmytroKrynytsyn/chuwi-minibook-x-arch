@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix screen rotation after resume for dmytro
+After=suspend.target
+
+[Service]
+Type=oneshot
+User=dmytro
+ExecStart=/usr/bin/python3 /usr/local/bin/fix-rotation.py
+
+[Install]
+WantedBy=suspend.target
