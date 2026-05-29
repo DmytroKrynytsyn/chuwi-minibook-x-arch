@@ -1,5 +1,18 @@
 # Arch Linux config for Chuwi MiniBook X
 
+## Connect wifi
+
+[iwd]# device lis
+[iwd]# station wlan0 scan
+[iwd]# station wlan0 get-networks
+[iwd]# station wlan0 connect "SSID-Name"
+[iwd]# exit
+
+or
+
+iwctl --passphrase "your-password" station wlan0 connect "SSID-Name"
+iwctl station wlan0 show
+
 ## Problem
 Chuwi MiniBook X has a physically rotated screen (DSI-1, 1200x1920).
 This repo contains fixes applied during/after Arch Linux manual installation.
@@ -16,7 +29,7 @@ Press Enter to boot.
 See `/etc/default/grub` — add `fbcon=rotate:1` to `GRUB_CMDLINE_LINUX_DEFAULT`.
 
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet fbcon=rotate:1"
-GRUB_TIMEOUT=0
+GRUB_TIMEOUT=2
 
 Then run:
 
@@ -43,6 +56,18 @@ systemctl enable fix-rotation-dmytro.service
 - Refresh: 50.002hz
 - Scale: 1.6666
 - Rotation: right (uint32 3)
+
+In ~/.config/hypr/hyprland.conf:
+monitor=DSI-1,1200x1920@50,0x0,1.666667,transform,3
+
+pacman -S seatd
+pacman -S networkmanager iwd
+/etc/NetworkManager/conf.d/wifi_backend.conf:
+[device]
+wifi.backend=iwd
+
+systemctl enable --now iwd
+systemctl enable --now NetworkManager
 
 
 
