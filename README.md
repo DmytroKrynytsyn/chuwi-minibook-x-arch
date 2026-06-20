@@ -30,10 +30,12 @@ See `/etc/default/grub` — add `fbcon=rotate:1` to `GRUB_CMDLINE_LINUX_DEFAULT`
 
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet fbcon=rotate:1"
 GRUB_TIMEOUT=2
-
 Then run:
-
 grub-mkconfig -o /boot/grub/grub.cfg
+
+or
+sudo nano /etc/kernel/cmdline
+sudo mkinitcpio -P
 
 ### After suspend/resume fix
 GNOME loses rotation after lid close/open.
