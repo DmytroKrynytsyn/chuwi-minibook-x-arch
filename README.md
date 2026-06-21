@@ -77,12 +77,10 @@ systemctl enable --now NetworkManager
 pacstrap -K /mnt \
   base base-devel \
   linux linux-firmware \
-  nano vim \
+  nano nvim \
   networkmanager \
   grub efibootmgr \
   sof-firmware \
-  gnome \
-  gnome-tweaks \
   wayland \
   xorg-xwayland \
   mesa \
@@ -92,4 +90,6 @@ pacstrap -K /mnt \
   iwd \
   sudo \
   git \
-  python-dbus
+  python-dbus \
+  hyprlaucnher
+  
