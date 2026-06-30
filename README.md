@@ -92,4 +92,6 @@ pacstrap -K /mnt \
   git \
   python-dbus \
   hyprlaucnher
-  
+
+### extra
+paru (via binaries)
