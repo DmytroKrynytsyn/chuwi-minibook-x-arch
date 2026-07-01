@@ -91,5 +91,15 @@ pacstrap -K /mnt \
   sudo \
   git \
   python-dbus \
-  hyprlaucnher
+  hyprlaucnher \
+  ttf-nerd-fonts-symbols \
+  ttf-jetbrains-mono-nerd \
+  brightnessctl \
+  hyprland \
+  iio-sensor-proxy \
+  keyd \
+  auto-cpufreq 
   
+
+### extra
+paru (via binaries)
