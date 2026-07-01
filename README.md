@@ -93,7 +93,9 @@ pacstrap -K /mnt \
   python-dbus \
   hyprlaucnher \
   ttf-nerd-fonts-symbols \
-  ttf-jetbrains-mono-nerd
+  ttf-jetbrains-mono-nerd \
+  brightnessctl
+  
 
 ### extra
 paru (via binaries)
