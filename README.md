@@ -91,7 +91,9 @@ pacstrap -K /mnt \
   sudo \
   git \
   python-dbus \
-  hyprlaucnher
+  hyprlaucnher \
+  ttf-nerd-fonts-symbols \
+  ttf-jetbrains-mono-nerd
 
 ### extra
 paru (via binaries)
