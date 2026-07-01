@@ -77,7 +77,7 @@ systemctl enable --now NetworkManager
 pacstrap -K /mnt \
   base base-devel \
   linux linux-firmware \
-  nano nvim \
+  nvim \
   networkmanager \
   grub efibootmgr \
   sof-firmware \
@@ -90,15 +90,16 @@ pacstrap -K /mnt \
   iwd \
   sudo \
   git \
-  python-dbus \
-  hyprlaucnher \
+  hyprlauncher \
   ttf-nerd-fonts-symbols \
   ttf-jetbrains-mono-nerd \
   brightnessctl \
   hyprland \
   iio-sensor-proxy \
   keyd \
-  auto-cpufreq 
+  auto-cpufreq \
+  less \
+  hyprland
   
 
 ### extra
