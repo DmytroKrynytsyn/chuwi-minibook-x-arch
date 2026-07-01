@@ -94,7 +94,11 @@ pacstrap -K /mnt \
   hyprlaucnher \
   ttf-nerd-fonts-symbols \
   ttf-jetbrains-mono-nerd \
-  brightnessctl
+  brightnessctl \
+  hyprland \
+  iio-sensor-proxy \
+  keyd \
+  auto-cpufreq 
   
 
 ### extra
