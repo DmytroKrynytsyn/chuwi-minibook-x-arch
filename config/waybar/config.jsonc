@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["pulseaudio", "cava"],
+    "modules-left": ["pulseaudio"],
     "modules-center": ["clock", "hyprland/workspaces"],
     "modules-right": ["battery"],
     "battery": {
