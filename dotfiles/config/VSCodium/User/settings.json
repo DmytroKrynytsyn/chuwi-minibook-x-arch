@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', monospace",
+    "vim.handleKeys": {
+        "<C-j>": false
+    }
+}

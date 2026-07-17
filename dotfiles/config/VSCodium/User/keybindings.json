@@ -1,0 +1,12 @@
+[
+    {
+        "key": "meta+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled && !sideBarVisible"
+    },
+    {
+        "key": "meta+e",
+        "command": "workbench.action.closeSidebar",
+        "when": "sideBarVisible"
+    }
+]
