@@ -6,5 +6,9 @@
     "editor.fontFamily": "'JetBrainsMono Nerd Font Propo', 'Droid Sans Mono', monospace",
     "vim.handleKeys": {
         "<C-j>": false
-    }
+    },
+    "terminal.integrated.commandsToSkipShell": [
+       "workbench.action.toggleSidebarVisibility",
+       "workbench.action.toggleAuxiliaryBar"
+    ]
 }

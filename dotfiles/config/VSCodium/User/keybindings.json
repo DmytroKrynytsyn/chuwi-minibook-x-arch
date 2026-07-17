@@ -1,12 +1,14 @@
 [
     {
-        "key": "meta+e",
-        "command": "workbench.view.explorer",
-        "when": "viewContainer.workbench.view.explorer.enabled && !sideBarVisible"
+        "key": "ctrl+h",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
-        "key": "meta+e",
-        "command": "workbench.action.closeSidebar",
-        "when": "sideBarVisible"
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.toggleAuxiliaryBar"
     }
 ]
