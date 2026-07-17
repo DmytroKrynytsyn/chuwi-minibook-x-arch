@@ -98,8 +98,7 @@ pacstrap -K /mnt \
   iio-sensor-proxy \
   keyd \
   auto-cpufreq \
-  less \
-  hyprland
+  les
   
 
 ### extra
