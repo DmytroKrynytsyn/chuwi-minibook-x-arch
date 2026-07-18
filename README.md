@@ -75,31 +75,35 @@ systemctl enable --now NetworkManager
 
 ### pacstrap
 pacstrap -K /mnt \
-  base base-devel \
-  linux linux-firmware \
-  nvim \
-  networkmanager \
-  grub efibootmgr \
-  sof-firmware \
-  wayland \
-  xorg-xwayland \
-  mesa \
-  intel-media-driver \
-  vulkan-intel \
-  pipewire pipewire-pulse pipewire-alsa wireplumber \
-  iwd \
-  sudo \
-  git \
-  hyprlauncher \
-  ttf-nerd-fonts-symbols \
-  ttf-jetbrains-mono-nerd \
-  brightnessctl \
-  hyprland \
-  iio-sensor-proxy \
-  keyd \
-  auto-cpufreq \
-  les
+base base-devel
+linux linux-firmware sof-firmware
+intel-ucode
+neovim
+zsh
+sudo
+git
+less
+networkmanager
+wayland
+xorg-xwayland
+mesa
+intel-media-driver
+vulkan-intel
+pipewire pipewire-pulse pipewire-alsa wireplumber
+hyprland
+xdg-desktop-portal-hyprland
+waybar
+kitty
+hyprlauncher
+keyd
+brightnessctl
+ttf-nerd-fonts-symbols
+ttf-jetbrains-mono-nerd
   
 
 ### extra
 paru (via binaries)
+auto-cpufreq
+vscodium-bin
+brave-bin
+snappy-switcher
