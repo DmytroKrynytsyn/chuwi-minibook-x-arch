@@ -1,11 +1,11 @@
 {
     "layer": "top",
     "modules-left": ["pulseaudio"],
-    "modules-center": ["clock", "hyprland/workspaces"],
+    "modules-center": ["clock", "hyprland/workspaces","hyprland/language"],
     "modules-right": ["custom/tabletmode", "battery"],
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [".", "..", "...", "....", "....."]
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
