@@ -1,0 +1,16 @@
+#!/bin/sh
+STATE=/tmp/input-disabled
+
+if [ "$1" = "status" ]; then
+    if [ -e "$STATE" ]; then echo "✋"; else echo "⌨"; fi
+    exit 0
+fi
+
+if [ -e "$STATE" ]; then
+    V=true; rm "$STATE"
+else
+    V=false; touch "$STATE"
+fi
+hyprctl eval "hl.device({ name = 'keyd-virtual-keyboard', enabled = $V })"
+hyprctl eval "hl.device({ name = 'xxxx0000:05-0911:5288-touchpad', enabled = $V })"
+pkill -RTMIN+8 waybar

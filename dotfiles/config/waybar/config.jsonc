@@ -2,12 +2,19 @@
     "layer": "top",
     "modules-left": ["pulseaudio"],
     "modules-center": ["clock", "hyprland/workspaces"],
-    "modules-right": ["battery"],
+    "modules-right": ["custom/tabletmode", "battery"],
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "custom/tabletmode": {
+        "exec": "~/.local/bin/inputtoggle status",
+        "interval": "once",
+        "signal": 8,
+        "on-click": "~/.local/bin/inputtoggle",
+        "tooltip": false
     }
 }
