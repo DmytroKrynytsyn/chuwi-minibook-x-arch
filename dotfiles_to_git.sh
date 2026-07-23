@@ -4,6 +4,7 @@ cp -r ~/.config/waybar ./dotfiles/config
 cp -r ~/.config/kitty ./dotfiles/config
 cp -r ~/.config/nvim ./dotfiles/config
 cp -r ~/.config/snappy-switcher ./dotfiles/config
+cp -r ~/.config/fontconfig ./dotfiles/config
 
 mkdir ./dotfiles/config/VSCodium
 mkdir ./dotfiles/config/VSCodium/User
