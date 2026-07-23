@@ -100,6 +100,7 @@ brightnessctl
 ttf-nerd-fonts-symbols
 ttf-jetbrains-mono-nerd
 meld
+hyprsunset
   
 
 ### extra
