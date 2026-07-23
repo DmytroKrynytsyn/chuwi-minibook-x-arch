@@ -31,3 +31,15 @@ hl.window_rule({
 
     no_focus = true,
 })
+
+
+hl.window_rule({
+    match = {
+        class = "brave-browser",
+        title = "^(.*meet.google.com is sharing your screen.*)$",   -- replace with the real title pattern
+        float = true,
+    },
+
+    move = "onscreen 100%-300 60",
+    pin = true,
+})

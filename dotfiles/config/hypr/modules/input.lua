@@ -20,6 +20,7 @@ hl.config({
             natural_scroll = false,
             disable_while_typing = true,
             clickfinger_behavior = true,
+            tap_and_drag = false,
         },
     },
 })
