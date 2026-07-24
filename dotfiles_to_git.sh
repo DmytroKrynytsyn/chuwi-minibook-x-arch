@@ -22,3 +22,6 @@ cp /etc/udev/hwdb.d/99-touchpad-fuzz.hwdb ./dotfiles/etc/udev/hwdb.d
 rm -rf ./dotfiles/local/*
 mkdir -p ./dotfiles/local/bin
 cp ~/.local/bin/* ./dotfiles/local/bin
+
+mkdir -p ./dotfiles/home
+cp ~/.gitconfig ./dotfiles/home

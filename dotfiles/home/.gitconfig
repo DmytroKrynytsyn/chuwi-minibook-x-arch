@@ -1,0 +1,12 @@
+[user]
+	email = dmitry.krinitsyn@gmail.com
+	name = Dmytro Krynytsyn
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	keepBackup = false

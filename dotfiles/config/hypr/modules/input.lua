@@ -31,4 +31,7 @@ hl.gesture({
     action = "workspace"
 })
 
-
+hl.device({
+    name = "xxxx0000:05-0911:5288-touchpad",
+    scroll_factor = 0.5,
+})

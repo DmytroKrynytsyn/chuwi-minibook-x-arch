@@ -11,6 +11,7 @@ rm -rf /home/dmytro/.config/fontconfig/
 rm -rf /home/dmytro/.config/VSCodium/
 rm -f /etc/keyd/default.conf
 rm -f /home/dmytro/.local/bin/inputtoggle
+rm -f /home/dmytro/.gitconfig
 cp -r ./dotfiles/config/hypr/ /home/dmytro/.config/
 cp -r ./dotfiles/config/waybar/  /home/dmytro/.config/
 cp -r ./dotfiles/config/kitty/  /home/dmytro/.config/
@@ -22,9 +23,11 @@ cp ./dotfiles/etc/keyd/default.conf /etc/keyd/default.conf
 cp ./dotfiles/etc/udev/hwdb.d/99-touchpad-fuzz.hwdb /etc/udev/hwdb.d/99-touchpad-fuzz.hwdb
 cp ./dotfiles/local/bin/inputtoggle /home/dmytro/.local/bin/inputtoggle
 chmod +x /home/dmytro/.local/bin/inputtoggle
+cp ./dotfiles/home/.gitconfig /home/dmytro/.gitconfig
 chown -R dmytro:dmytro /home/dmytro/.config/
 chown dmytro:dmytro /home/dmytro/.local/bin/inputtoggle
 chown dmytro:dmytro /etc/keyd/default.conf
+chown dmytro:dmytro /home/dmytro/.gitconfig
 hyprctl reload
 keyd reload
 systemd-hwdb update
