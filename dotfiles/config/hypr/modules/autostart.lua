@@ -8,7 +8,8 @@
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
-hl.on("hyprland.start", function () 
+hl.on("hyprland.start", function ()
   hl.exec_cmd("waybar")
   hl.exec_cmd("snappy-switcher --daemon")
+  hl.exec_cmd("hyprsunset")
 end)

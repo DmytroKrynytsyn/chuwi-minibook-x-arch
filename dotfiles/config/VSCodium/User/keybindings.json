@@ -10,5 +10,15 @@
     {
         "key": "ctrl+k",
         "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus && terminalTextSelected"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "workbench.action.terminal.paste",
+        "when": "terminalFocus"
     }
 ]
