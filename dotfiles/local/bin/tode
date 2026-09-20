@@ -1,0 +1,4 @@
+#!/bin/sh
+ROOT="${TODE_INSTALL_ROOT:-$HOME/.local/lib/tode}"
+export ELECTRON_RUN_AS_NODE=1
+exec "$ROOT/vendor/terminal-browser/electron/electron" "$ROOT/dist/main.js" "$@"
