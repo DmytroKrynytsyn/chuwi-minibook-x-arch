@@ -102,7 +102,7 @@ ttf-jetbrains-mono-nerd
 meld
 hyprsunset
 zathura zathura-pdf-mupdf zathura-djvu zathura-cb foliate
-tesseract-data-ukr tesseract-data-deu tesseract-data-rus
+tesseract-data-ukr tesseract-data-deu tesseract-data-rus tesseract-data-eng
 
 ### extra
 paru (via binaries)
