@@ -101,7 +101,8 @@ ttf-nerd-fonts-symbols
 ttf-jetbrains-mono-nerd
 meld
 hyprsunset
-  
+zathura zathura-pdf-mupdf zathura-djvu zathura-cb foliate
+tesseract-data-ukr tesseract-data-deu tesseract-data-rus
 
 ### extra
 paru (via binaries)
